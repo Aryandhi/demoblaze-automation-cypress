@@ -4,6 +4,7 @@ class Homepage {
   
   async visit() {
     cy.visit("");
+    cy.viewport(855, 1000);
     return cy.url("eq", dataset.data.baseUrl);
   }
 
